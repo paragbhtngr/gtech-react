@@ -1,0 +1,32 @@
+@import 'variables';
+
+.sidebar {
+    height: 100vh;
+    background: $primary-gradient;
+    width: 200px;
+    float: left;
+    position: fixed;
+    margin-top: 50px;
+    z-index: 11;
+    ul {
+        list-style: none;
+        padding-left: 20px;
+        padding-top: 10px;
+        li {
+            padding-top: 20px;
+            opacity: 0.8;
+            transition: all 600ms cubic-bezier(0.075, 0.82, 0.165, 1);
+            &:hover {
+                opacity: 1;
+            }
+            a {
+                text-decoration: none;
+                color: white;
+                h4 {
+                    display: inline;
+                    padding-left: 10px;
+                }
+            }
+        }
+    }
+}

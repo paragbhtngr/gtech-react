@@ -1,0 +1,26 @@
+@import 'variables';
+
+body {
+    background: $primary-gradient;
+}
+
+#login-container {
+    height: 100vh;
+    display: flex;
+}
+#login-card {
+    width: 400px;
+    margin: auto;
+    text-align: center;
+    background: white;
+    padding: 40px;
+    
+    .input-group-addon {
+        width: 40px;
+        display: flex;
+        justify-content: center;
+    }
+    .login-info {
+        text-align: right;
+    }
+}
