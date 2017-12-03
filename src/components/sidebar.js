@@ -7,8 +7,8 @@ class Sidebar extends Component {
         return (
             <div className="sidebar">
                 <ul>
-                    <li><a href=""><i className="fa fa-bar-chart" aria-hidden="true"></i> <h4>Dashboard</h4></a></li>
-                    <li><a href=""><i className="fa fa-comments" aria-hidden="true"></i> <h4>Chat</h4></a></li>
+                    <li><a href={"/dashboard/"+this.props.userType}><i className="fa fa-lg fa-bar-chart" aria-hidden="true"></i> <h4>Dashboard</h4></a></li>
+                    <li><a href={"/dashboard/"+this.props.userType+"/chat"}><i className="fa fa-lg fa-comments" aria-hidden="true"></i> <h4>Chat</h4></a></li>
                 </ul>
             </div>
         );

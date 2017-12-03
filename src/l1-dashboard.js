@@ -11,34 +11,35 @@ class L1Dash extends Component {
     render() {
         return (
             <div className="container-fluid" id="dashboard-container">
-            <Navbar navbarLight bgLight fixedTop fluid>
-                <Navbar.Brand><h4>GTech Dashboard</h4></Navbar.Brand>
-                <Nav pullRight>
-                    <Navbar.Text>l1emailaddress@mailprovider.com</Navbar.Text>
-                </Nav>
-            </Navbar>
-            <Sidebar />
+                <Navbar navbarLight bgLight fixedTop fluid>
+                    <Navbar.Brand><h4>GTech Dashboard</h4></Navbar.Brand>
+                    <Nav pullRight>
+                        <Navbar.Text>l1emailaddress@mailprovider.com</Navbar.Text>
+                    </Nav>
+                </Navbar>
+                <Sidebar userType="L1"/>
                 <div className="content">
                     <h4>Active Policies</h4>
+                    <br/>
                     <div className="active-policies">
                         <ActivePolicyCard 
                             PolicyName="Apollo Munich Health Insurance"
                             PolicyNo="23109-4233-452335"
-                            ClaimCurr="INR"
+                            ClaimCurr="₹"
                             ClaimAmt="213414.00"
                             PercentClaimed="48"
                         />
                         <ActivePolicyCard 
                             PolicyName="HDFC Ergo Medisure Classic"
                             PolicyNo="21229-4211-012923"
-                            ClaimCurr="INR"
+                            ClaimCurr="₹"
                             ClaimAmt="12564.00"
                             PercentClaimed="24"
                         />
                         <ActivePolicyCard 
                             PolicyName="Apollo Munich Health Insurance"
                             PolicyNo="23109-4233-452335"
-                            ClaimCurr="INR"
+                            ClaimCurr="₹"
                             ClaimAmt="213414.00"
                             PercentClaimed="85"
                         />
@@ -53,13 +54,13 @@ class L1Dash extends Component {
                         <ActiveClaimCard 
                             PolicyName="Apollo Munich Health Insurance"
                             PolicyNo="23109-4233-452335"
-                            ClaimCurr="INR"
+                            ClaimCurr="₹"
                             ClaimAmt="213414.00"
                         />
                         <ActiveClaimCard 
                             PolicyName="Apollo Munich Health Insurance"
                             PolicyNo="23109-4233-452335"
-                            ClaimCurr="INR"
+                            ClaimCurr="₹"
                             ClaimAmt="213414.00"
                         />
                     </div>
@@ -72,13 +73,13 @@ class L1Dash extends Component {
                         <ActiveClaimCard 
                             PolicyName="Apollo Munich Health Insurance"
                             PolicyNo="23109-4233-452335"
-                            ClaimCurr="INR"
+                            ClaimCurr="₹"
                             ClaimAmt="213414.00"
                         />
                         <ActiveClaimCard 
                             PolicyName="Apollo Munich Health Insurance"
                             PolicyNo="23109-4233-452335"
-                            ClaimCurr="INR"
+                            ClaimCurr="₹"
                             ClaimAmt="213414.00"
                         />
                     </div>

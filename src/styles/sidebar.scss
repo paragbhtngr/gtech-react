@@ -8,13 +8,14 @@
     position: fixed;
     margin-top: 50px;
     z-index: 11;
+    text-transform: uppercase;
     ul {
         list-style: none;
         padding-left: 20px;
         padding-top: 10px;
         li {
             padding-top: 20px;
-            opacity: 0.8;
+            opacity: 0.5;
             transition: all 600ms cubic-bezier(0.075, 0.82, 0.165, 1);
             &:hover {
                 opacity: 1;
@@ -25,6 +26,8 @@
                 h4 {
                     display: inline;
                     padding-left: 10px;
+                    font-weight: 300;
+                    letter-spacing: 1px;
                 }
             }
         }

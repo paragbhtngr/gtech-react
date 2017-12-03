@@ -56,9 +56,9 @@ class ActiveClaimCard extends Component {
                             </div>        
                         </div>
                         <br/>
-                        <div class="claim-event">
-                            <i class="fa fa-exclamation-circle fa-lg" aria-hidden="true" style={{color: "orange", zIndex: "20", background: "white"}}></i> 
-                            <div class="line" style={{
+                        <div className="claim-event">
+                            <i className="fa fa-exclamation-circle fa-lg" aria-hidden="true" style={{color: "orange", zIndex: "20", background: "white"}}></i> 
+                            <div className="line" style={{
                                 background: "grey",
                                 width: "2px",
                                 height: "calc(100% + 22.5px)",
@@ -75,9 +75,9 @@ class ActiveClaimCard extends Component {
                             </div>        
                         </div>
                         <br/>
-                        <div class="claim-event">
-                            <i class="fa fa-circle fa-lg" aria-hidden="true" style={{color: "silver", zIndex: "20", background: "white"}}></i> 
-                            <div class="line" style={{
+                        <div className="claim-event">
+                            <i className="fa fa-circle fa-lg" aria-hidden="true" style={{color: "silver", zIndex: "20", background: "white"}}></i> 
+                            <div className="line" style={{
                                 background: "grey",
                                 width: "2px",
                                 height: "calc(50% + 22.5px)",

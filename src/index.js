@@ -18,9 +18,10 @@ ReactDOM.render(
     <Router>
         <div>
         <Route exact path="/" component={Login}/>
-        <Route path="/dashboard/l2" component={L2Dash}/>
-        <Route path="/dashboard/l1" component={L1Dash}/>
-        <Route path="/dashboard/broker" component={BrokerDash}/>
+        <Route exact path="/dashboard/l2" component={L2Dash}/>
+        <Route exact path="/dashboard/l1" component={L1Dash}/>
+        <Route exact path="/dashboard/broker" component={BrokerDash}/>
+        <Route path="/dashboard/:userType/chat" component={Login}/>
         </div>
     </Router>
 , document.getElementById('root'));

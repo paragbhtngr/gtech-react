@@ -45,28 +45,49 @@ class ActivePolicyCard extends Component {
         return ( 
             <div className="card active-policy">        
             <p style={{fontSize: "15px", marginBottom: "0px"}} >{ this.props.PolicyName }</p>
-            <p style={{fontSize: "15px"}} >Policy No. { this.props.PolicyNo }</p>
+            <p style={{fontSize: "15px", marginBottom: "0px"}} >Policy No. { this.props.PolicyNo }</p>
+            <div style={{display: 'flex', alignItems: 'center'}}>
+                <div style={{width: "65%"}}>
+                    <p style={{marginBottom: "0px", fontWeight: "300"}}>Claimable Amount</p>
+                    <h2 style={{marginTop: "0px", fontWeight: "300"}} >{ this.props.ClaimCurr} { this.props.ClaimAmt }</h2>
+                </div>
+                <div style={{width: "35%"}}>
+                    <Doughnut
+                        data= {{
+                            datasets: [{
+                                label: '# of Votes',
+                                data: [ (this.props.PercentClaimed), (100 - this.props.PercentClaimed), 0 ],
+                                backgroundColor: [ '#2b5297', '#eeeeee', '#000000' ],
+                                borderWidth: [ 0, 0, 0 ],
+                                hoverBorderWidth: [ 0, 0, 0 ],
+                                hoverBackgroundColor: [ '#2b5297', '#eeeeee', '#000000' ]
+                            }],
+                            text: (this.props.PercentClaimed+'%')
+                        }}
+                        options={{
+                            tooltips: { enabled: false },
+                            cutoutPercentage: 80
+                        }}
+                    width="100"
+                    height="100"
+                    />
+                </div>
+            </div>
 
-            <p style={{marginBottom: "0px"}}>Claimable Amount</p>
-            <h2 style={{marginTop: "0px"}} >{ this.props.ClaimCurr} { this.props.ClaimAmt }</h2>
-
-            <Doughnut 
-                data= {{
-                    datasets: [{
-                        label: '# of Votes',
-                        data: [(this.props.PercentClaimed), (100 - this.props.PercentClaimed),0],
-                        backgroundColor: [
-                            '#2b5297',
-                            '#cecece',
-                            '#000000'
-                        ],
-                    }],
-                    text: (this.props.PercentClaimed+'%')
-                }}
-                options={{
-                    cutoutPercentage: 70
-                }}
-            />
+            <div className="l1-stats" style={{display: "flex", justifyContent: "space-around", textAlign: "center"}}>
+                <div>
+                    <h2 style={{fontWeight: "300", marginBottom: "0px"}}>35%</h2>
+                    <p>Payout Ratio</p>
+                </div>
+                <div>
+                    <h2 style={{fontWeight: "300", marginBottom: "0px"}}>3</h2>
+                    <p>Active Claims</p>
+                </div>
+                <div>
+                    <h2 style={{fontWeight: "300", marginBottom: "0px"}}>X</h2>
+                    <p>Unknown Stat</p>
+                </div>
+            </div>
 
             <a className="policy-more" onClick={this.open}>
             <span>

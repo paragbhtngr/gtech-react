@@ -17,26 +17,26 @@ class L2Dash extends Component {
                     <Navbar.Text>l2emailaddress@mailprovider.com</Navbar.Text>
                 </Nav>
             </Navbar>
-            <Sidebar />
+            <Sidebar userType="L2"/>
                 <div className="content">
                     <h4>Active Policies</h4>
                     <div className="active-policies">
                         <ActivePolicyCard 
                             PolicyName="Apollo Munich Health Insurance"
                             PolicyNo="23109-4233-452335"
-                            ClaimCurr="INR"
+                            ClaimCurr="₹"
                             ClaimAmt="213414.00"
                         />
                         <ActivePolicyCard 
                             PolicyName="HDFC Ergo Medisure Classic"
                             PolicyNo="21229-4211-012923"
-                            ClaimCurr="INR"
+                            ClaimCurr="₹"
                             ClaimAmt="12564.00"
                         />
                         <ActivePolicyCard 
                             PolicyName="Apollo Munich Health Insurance"
                             PolicyNo="23109-4233-452335"
-                            ClaimCurr="INR"
+                            ClaimCurr="₹"
                             ClaimAmt="213414.00"
                         />
                     </div>
@@ -50,13 +50,13 @@ class L2Dash extends Component {
                         <ActiveClaimCard 
                             PolicyName="Apollo Munich Health Insurance"
                             PolicyNo="23109-4233-452335"
-                            ClaimCurr="INR"
+                            ClaimCurr="₹"
                             ClaimAmt="213414.00"
                         />
                         <ActiveClaimCard 
                             PolicyName="Apollo Munich Health Insurance"
                             PolicyNo="23109-4233-452335"
-                            ClaimCurr="INR"
+                            ClaimCurr="₹"
                             ClaimAmt="213414.00"
                         />
                     </div>
@@ -69,13 +69,13 @@ class L2Dash extends Component {
                         <ActiveClaimCard 
                             PolicyName="Apollo Munich Health Insurance"
                             PolicyNo="23109-4233-452335"
-                            ClaimCurr="INR"
+                            ClaimCurr="₹"
                             ClaimAmt="213414.00"
                         />
                         <ActiveClaimCard 
                             PolicyName="Apollo Munich Health Insurance"
                             PolicyNo="23109-4233-452335"
-                            ClaimCurr="INR"
+                            ClaimCurr="₹"
                             ClaimAmt="213414.00"
                         />
                     </div>
