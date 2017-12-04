@@ -48,8 +48,9 @@ class ActivePolicyCard extends Component {
             <p style={{fontSize: "15px", marginBottom: "0px"}} >Policy No. { this.props.PolicyNo }</p>
             <div style={{display: 'flex', alignItems: 'center'}}>
                 <div style={{width: "65%"}}>
-                    <p style={{marginBottom: "0px", fontWeight: "300"}}>Claimable Amount</p>
-                    <h2 style={{marginTop: "0px", fontWeight: "300"}} >{ this.props.ClaimCurr} { this.props.ClaimAmt }</h2>
+                    <p style={{marginBottom: "0px", fontWeight: "300"}}>Remaining Claimable Amount</p>
+                    <h2 style={{marginTop: "0px", marginBottom: "0px", fontWeight: "300"}} >{ this.props.ClaimCurr} { this.props.ClaimAmt }</h2>
+                    <p style={{marginBottom: "0px", fontWeight: "300"}}>({this.props.PercentClaimed}% of total claimed)</p>
                 </div>
                 <div style={{width: "35%"}}>
                     <Doughnut

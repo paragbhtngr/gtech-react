@@ -6,17 +6,17 @@ class Login extends Component {
     handleClick(e) {
         var company = document.getElementById('company').value;
         
-        if (company === "L2") {
+        if (company === "L2" || company === "l2" ) {
             console.log("LOGIN Company:", company);
-            window.location = '/dashboard/l2';
+            window.location = '/l2/dashboard';
         } 
-        else if (company === "L1") {
+        else if (company === "L1" || company === "l1" ) {
             console.log("LOGIN Company:", company);
-            window.location = '/dashboard/l1';
+            window.location = '/l1/dashboard';
         }
         else if (company === "broker") {
             console.log("LOGIN Company:", company);
-            window.location = '/dashboard/broker';
+            window.location = '/broker/dashboard';
         }
         else {
             console.log("LOGIN Company: Invalid");
