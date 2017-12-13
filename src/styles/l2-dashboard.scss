@@ -4,7 +4,7 @@
     min-height: 100vh;
     margin: 0;
     padding: 0;
-    background: #e0e0e0;
+    background: $background-color;
 }
 
 .content {
@@ -13,7 +13,7 @@
     margin-left: 200px;
     padding-top: 70px;
     .active-policies {
-        overflow-x: scroll;
+        // overflow-x: scroll;
         margin-left: -20px;
         .active-policy {
             margin-left: 20px;

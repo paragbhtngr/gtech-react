@@ -1,0 +1,85 @@
+@import 'variables';
+
+#dashboard-container {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: $background-color;
+}
+
+.content {
+    background: white;
+    width: calc(100vw - 200px);
+    padding: 0px;
+    margin-left: 200px;
+    padding-top: 50px;
+    display: flex;
+    .message-sidebar {
+        min-width: 300px;
+        background: white;
+        height: calc(100vh - 50px);
+        margin: 0px;
+        border-right: 2px solid #eee;
+        .search {
+            padding: 20px 20px;
+            .input-group-addon {
+                border-width: 0px;
+                
+            }
+            #search {
+                border-width: 0px;
+                background: #eee;
+                box-shadow: none;
+                &:focus {
+                    box-shadow: none;
+                    + .input-group-addon {
+                        background-color: #eee;
+                        color: rgb(85,85,85);
+                    }
+                }
+            }
+        }
+        .chat-list-item {
+            padding: 10px;
+            &.active {
+                background: rgba($color: $primary-color, $alpha: 0.1);
+            }
+            .chat-title {
+                font-weight: normal;
+                color: rgba($color: $secondary-color, $alpha: 0.7);
+                margin: 5px 0px;
+                &.unread {
+                    font-weight: bolder;
+                    color: black;
+                }
+            }
+            .chat-email {
+                font-weight: normal;
+                color: rgba($color: $secondary-color, $alpha: 0.7);
+                margin: 5px 0px;
+                &.unread {
+                    color: black;
+                }
+            }
+            .chat-text {
+                font-weight: normal;
+                color: rgba($color: $secondary-color, $alpha: 0.7);
+                margin: 5px 0px;
+                &.unread {
+                    font-weight: bolder;
+                    color: black;
+                }
+            }
+        }
+    }
+    .chat-window {
+        background: grey;
+        width: 100%;
+        height: calc(100vh - 50px);
+        
+    }
+}
+
+a, .claim-more, .policy-more {
+    user-select: none;
+}

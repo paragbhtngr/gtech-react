@@ -17,7 +17,7 @@ class L2Dash extends Component {
                     <Navbar.Text>l2emailaddress@mailprovider.com</Navbar.Text>
                 </Nav>
             </Navbar>
-            <Sidebar userType="L2" activePage="dashboard"/>
+            <Sidebar userType="l2" activePage="dashboard"/>
                 <div className="content">
                     <h4>Active Policies</h4>
                     <div className="active-policies">
