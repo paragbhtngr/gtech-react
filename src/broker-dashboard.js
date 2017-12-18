@@ -24,7 +24,7 @@ class L1Dash extends Component {
                         <div>
                             <Button className="small" bsStyle="primary" id="all-policies" href="/broker/policies"> View All Active Policies</Button>
                             <span style={{paddingLeft: "15px"}}></span>
-                            <Button className="small" bsStyle="primary" id="new-policy"> Create New Policy</Button>
+                            <Button className="small" bsStyle="primary" id="new-policy" href="/broker/newpolicy"> Create New Policy</Button>
                         </div>
                     </div>
                     <br/>

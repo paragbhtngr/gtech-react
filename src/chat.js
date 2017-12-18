@@ -19,14 +19,12 @@ class L1Dash extends Component {
                     with: 'from.emailadress@fakeemail.com',
                     chatlog: [
                         {
-                            unread: true,
                             from: 'from.emailadress@fakeemail.com',
                             time: 1513029366986,
                             type: 'text',
                             body: 'Hi! This is a text message',
                         },
                         {
-                            unread: true,
                             from: 'user.emailadress@fakeemail.com',
                             time: 1513029366986,
                             type: 'text',
@@ -103,7 +101,7 @@ class L1Dash extends Component {
                     </Nav>
                 </Navbar>
                 <Sidebar userType={this.state.userType} activePage="dashboard"/>
-                <div className="content">
+                <div className="chat-content">
                     <div className="message-sidebar">
                         <div>
                         <InputGroup className="search">

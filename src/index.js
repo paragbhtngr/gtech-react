@@ -11,6 +11,7 @@ import L1Dash from './l1-dashboard';
 import BrokerDash from './broker-dashboard';
 import BrokerPolicies from './broker-policies';
 import BrokerClaims from './broker-claims';
+import BrokerNewPolicy from './broker-new-policy';
 import Chat from './chat';
 
 import registerServiceWorker from './registerServiceWorker';
@@ -26,6 +27,7 @@ ReactDOM.render(
         <Route exact path="/broker/dashboard" component={BrokerDash}/>
         <Route exact path="/broker/policies" component={BrokerPolicies}/>
         <Route exact path="/broker/claims" component={BrokerClaims}/>
+        <Route exact path="/broker/newpolicy" component={BrokerNewPolicy}/>
         <Route path="/:userType/chat" component={Chat}/>
         </div>
     </Router>
