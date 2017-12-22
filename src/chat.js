@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import { Navbar, Nav, FormControl, InputGroup } from 'react-bootstrap';
+import { FormControl, InputGroup } from 'react-bootstrap';
 import './css/chat.css';
+
+import Nav from './components/navbar';
 import Sidebar from './components/sidebar';
 
 
@@ -94,12 +96,7 @@ class L1Dash extends Component {
 
         return (
             <div className="container-fluid" id="dashboard-container">
-                <Navbar navbarLight bgLight fixedTop fluid>
-                    <Navbar.Brand><h4>GTech Dashboard</h4></Navbar.Brand>
-                    <Nav pullRight>
-                        <Navbar.Text>{this.state.userEmailAddress}</Navbar.Text>
-                    </Nav>
-                </Navbar>
+                <Nav/>
                 <Sidebar userType={this.state.userType} activePage="dashboard"/>
                 <div className="chat-content">
                     <div className="message-sidebar">

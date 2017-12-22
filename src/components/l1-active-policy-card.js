@@ -43,7 +43,7 @@ class ActivePolicyCard extends Component {
     
     render() {
         return ( 
-            <div className="card active-policy">        
+            <div className="card active-policy animated fadeIn">        
             <p style={{fontSize: "15px", marginBottom: "0px"}} >{ this.props.PolicyName }</p>
             <p style={{fontSize: "15px", marginBottom: "0px"}} >Policy No. { this.props.PolicyNo }</p>
             <div style={{display: 'flex', alignItems: 'center'}}>
@@ -58,10 +58,10 @@ class ActivePolicyCard extends Component {
                             datasets: [{
                                 label: '# of Votes',
                                 data: [ (this.props.PercentClaimed), (100 - this.props.PercentClaimed), 0 ],
-                                backgroundColor: [ '#2b5297', '#eeeeee', '#000000' ],
+                                backgroundColor: [ '#1e7241', '#eeeeee', '#000000' ],
                                 borderWidth: [ 0, 0, 0 ],
                                 hoverBorderWidth: [ 0, 0, 0 ],
-                                hoverBackgroundColor: [ '#2b5297', '#eeeeee', '#000000' ]
+                                hoverBackgroundColor: [ '#1e7241', '#eeeeee', '#000000' ]
                             }],
                             text: (this.props.PercentClaimed+'%')
                         }}

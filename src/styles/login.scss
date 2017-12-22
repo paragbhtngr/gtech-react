@@ -7,8 +7,10 @@ body {
 #login-container {
     height: 100vh;
     display: flex;
+    overflow-y: hidden;
 }
 #login-card {
+    z-index: 200;
     width: 400px;
     margin: auto;
     text-align: center;
@@ -17,6 +19,17 @@ body {
     border-radius: 20px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
 
+    .card-title, .volvox-title {
+        font-family: $theme-font;
+        text-transform: uppercase;
+        margin-top: 10px;
+        color: #72bf42;
+    }
+
+    .volvox-title-image {
+        max-height: 100px;
+        max-width: 100px;
+    }
     
     .input-group-addon {
         width: 40px;
@@ -25,5 +38,24 @@ body {
     }
     .login-info {
         text-align: right;
+    }
+
+    #login-button {
+        background: $theme-color;
+        border: 1px solid $theme-color;
+        box-shadow: none;
+        text-transform: uppercase;
+        &:focus {
+            outline: 0;
+        }
+        &:hover {
+            background-color: transparent;
+            color: $theme-color;
+            text-shadow: none;
+            &:active {
+                color: $theme-color;
+                border-color: $theme-color;
+            }
+        }     
     }
 }

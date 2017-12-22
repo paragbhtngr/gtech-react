@@ -43,7 +43,7 @@ class ActivePolicyCard extends Component {
     
     render() {
         return ( 
-            <div className="card active-policy">        
+            <div className="card active-policy animated fadeIn">        
             <p style={{fontSize: "15px", marginBottom: "0px"}} >{ this.props.PolicyName }</p>
             <p style={{fontSize: "15px", marginBottom: "0px"}} >Policy No. { this.props.PolicyNo }</p>
             <div style={{display: 'flex', alignItems: 'center'}}>

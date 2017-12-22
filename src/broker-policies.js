@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import { Navbar, Nav, Button } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 import './css/l1-dashboard.css';
+import Nav from './components/navbar';
 import Sidebar from './components/sidebar';
 import ActivePolicyCard from './components/l1-active-policy-card';
-import ActiveClaimCard from './components/l1-active-claim-card';
+// import ActiveClaimCard from './components/l1-active-claim-card';
 
 
 class L2Dash extends Component {
@@ -11,12 +12,7 @@ class L2Dash extends Component {
     render() {
         return (
             <div className="container-fluid" id="dashboard-container">
-            <Navbar navbarLight bgLight fixedTop fluid>
-                <Navbar.Brand><h4>GTech Dashboard</h4></Navbar.Brand>
-                <Nav pullRight>
-                    <Navbar.Text>l2emailaddress@mailprovider.com</Navbar.Text>
-                </Nav>
-            </Navbar>
+            <Nav/>
             <Sidebar userType="broker" activePage="policies"/>
                 <div className="content">
                     <div style = {{ display: "flex", justifyContent: "space-between", alignItems: "baseline" }}>

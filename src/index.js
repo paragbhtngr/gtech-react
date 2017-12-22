@@ -12,10 +12,14 @@ import BrokerDash from './broker-dashboard';
 import BrokerPolicies from './broker-policies';
 import BrokerClaims from './broker-claims';
 import BrokerNewPolicy from './broker-new-policy';
+
+import ParticleCanvas from './components/particle-canvas';
+
 import Chat from './chat';
 
 import registerServiceWorker from './registerServiceWorker';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
+
 
 
 ReactDOM.render(
@@ -28,6 +32,7 @@ ReactDOM.render(
         <Route exact path="/broker/policies" component={BrokerPolicies}/>
         <Route exact path="/broker/claims" component={BrokerClaims}/>
         <Route exact path="/broker/newpolicy" component={BrokerNewPolicy}/>
+        <Route exact path="/testpage" component={ParticleCanvas}/>
         <Route path="/:userType/chat" component={Chat}/>
         </div>
     </Router>

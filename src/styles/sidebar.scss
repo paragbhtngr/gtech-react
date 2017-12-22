@@ -2,13 +2,14 @@
 
 .sidebar {
     height: 100vh;
-    background: $primary-gradient;
+    background: $primary-gradient-reverse;
     width: 200px;
     float: left;
     position: fixed;
     margin-top: 50px;
     z-index: 11;
     text-transform: uppercase;
+    overflow-y: hidden;
     ul {
         list-style: none;
         padding-left: 0px;
@@ -20,7 +21,7 @@
             color: lighten($color: $primary-color, $amount: 30);
             transition: all 600ms cubic-bezier(0.075, 0.82, 0.165, 1);
             &.active {
-                background: $secondary-color;
+                background: darken($color: $secondary-color, $amount: 10);
                 border-left: 5px solid lighten($color: $primary-color, $amount: 30);
                 padding-left: 15px;
             }
@@ -34,7 +35,7 @@
             }
             a {
                 text-decoration: none;
-                color: lighten($color: $primary-color, $amount: 30);
+                color: lighten($color: $primary-color, $amount: 40);
                 transition: all 600ms cubic-bezier(0.075, 0.82, 0.165, 1);
                 h4 {
                     display: inline;
@@ -44,5 +45,13 @@
                 }
             }
         }
+    }
+    .sidebar-image {
+        width: 100%;
+        position: absolute;
+        bottom: -100px;
+        left: -20px;
+        opacity: 0.7;
+        mix-blend-mode: luminosity;
     }
 }

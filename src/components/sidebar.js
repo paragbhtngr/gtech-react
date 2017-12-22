@@ -22,7 +22,7 @@ class Sidebar extends Component {
                         </ul>
                     )
                 }
-                
+            <img className="sidebar-image" src="../img/network.png" alt=""/>
             </div>
         );
     }

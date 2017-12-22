@@ -1,6 +1,17 @@
-@import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,700|Open+Sans:300,400,700);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,700|Open+Sans:300,400,700|Exo+2);
 
-$primary-color: #2a5298;
-$secondary-color: #1e3c72;
+$theme-color: #72bf42;
+
+$primary-color: #398b32;
+$secondary-color: #1e7241;
+
+// $primary-color: #2052a8;
+// $secondary-color: #1e3c72;
 $background-color: #ebebeb;
 $primary-gradient: linear-gradient(to top, $secondary-color, $primary-color);
+$primary-gradient-reverse: linear-gradient(to bottom, $secondary-color, $primary-color);
+
+
+$theme-font: 'Exo 2', sans-serif;
+$heading-font: 'Ubuntu', 'Segoe UI', sans-serif;
+$body-font: 'Open Sans', Helvetica, Arial, sans-serif;

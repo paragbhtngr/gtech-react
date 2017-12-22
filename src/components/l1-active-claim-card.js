@@ -20,7 +20,7 @@ class ActiveClaimCard extends Component {
     
     render() {
         return ( 
-            <div className="card active-claim-card">
+            <div className="card active-claim-card animated fadeIn">
                 <div className="active-claim-card-inner">
                     <div>
                         <span>Claim ID: 2342352626</span> 
